@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MovieImageStyle" >
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="strokeWidth">0.5dp</item>
+        <item name="strokeColor">#DDDDDD</item>
+    </style>
+</resources>

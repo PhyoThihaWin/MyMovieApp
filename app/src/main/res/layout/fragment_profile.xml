@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical"
+    tools:context=".fragment.ProfileFragment">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize">
+
+       <ImageView
+           android:id="@+id/ivBack"
+           android:layout_width="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/margin_medium"
+           android:padding="@dimen/margin_medium"
+           android:src="@drawable/ic_baseline_keyboard_backspace_24" />
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="Profile"
+           android:textAppearance="@style/Body2TextApperance.Bold.English"
+           android:textSize="@dimen/text_regular_2x" />
+
+   </FrameLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        style="@style/MovieImageStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="To Watch Latest Movies"
+        android:textAppearance="@style/Body2TextApperance.Bold.English"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_xxlarge"
+        android:layout_marginStart="@dimen/margin_xxlarge"
+        android:backgroundTint="@color/red"
+        android:text="Log in or sing up"
+        android:textAppearance="@style/Body2TextApperance.SemiBold.English"
+        android:textSize="@dimen/text_regular_2x" />
+
+
+</LinearLayout>

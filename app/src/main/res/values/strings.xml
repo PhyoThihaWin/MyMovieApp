@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyMovieApp</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_browse">Browse</string>
+    <string name="menu_profile">Profile</string>
+    <string name="lbl_select_user_profile_image">Select User Profile</string>
+    <string name="error_photo_uri_null">Unknown Uri</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

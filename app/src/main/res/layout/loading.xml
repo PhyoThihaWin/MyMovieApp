@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="#fff"
+    app:cardCornerRadius="@dimen/margin_medium">
+
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:elevation="@dimen/margin_medium"
+        android:indeterminate="true"
+        android:padding="@dimen/margin_xlarge" />
+
+</com.google.android.material.card.MaterialCardView>

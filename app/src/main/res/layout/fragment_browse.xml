@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundDark"
+    android:orientation="vertical"
+    tools:context=".fragment.MovieListFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentInsetStart="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_searchComplete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium_2"
+                android:background="@drawable/bg_search_round"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/margin_medium_2"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium_2"
+                android:paddingBottom="@dimen/margin_medium">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_baseline_search_24" />
+
+                <EditText
+                    android:id="@+id/et_searchMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_medium"
+                    android:background="@null"
+                    android:hint="Search.."
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textAppearance="@style/Body2TextApperance.English"
+                    android:textColorHint="@color/color_menu_grey"
+                    android:textSize="@dimen/text_regular_2x" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivClearText"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/margin_medium_2"
+                android:padding="12dp"
+                android:src="@drawable/ic_baseline_clear_24"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/layout_searchComplete"
+                app:layout_constraintEnd_toEndOf="@id/layout_searchComplete"
+                app:layout_constraintTop_toTopOf="@id/layout_searchComplete"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+
+
+    </Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_MovieGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingEnd="@dimen/margin_medium"
+        tools:listitem="@layout/list_item_movie_grid_small" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+            <item android:gravity="bottom" android:left="16dp" android:right="16dp">
+                <shape>
+                    <size android:height="4dp" />
+                    <corners android:topLeftRadius="@dimen/margin_medium" android:topRightRadius="@dimen/margin_medium" />
+                    <solid android:color="@color/red" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_selected="false">
+        <shape>
+            <solid android:color="@color/colorBackgroundDark" />
+        </shape>
+    </item>
+</selector>
