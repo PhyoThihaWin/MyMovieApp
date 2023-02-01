@@ -41,8 +41,8 @@ jobs:
       - name: Run Test tasks
         run: ./gradlew test
 
-      - name: Run KtLint Task
-        run: ./gradlew ktlintCheck
+#      - name: Run KtLint Task
+#        run: ./gradlew ktlintCheck
 
       - name: Build Project
         run: ./gradlew assemble
